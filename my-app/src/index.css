@@ -1,0 +1,87 @@
+/* index.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #fff176, #ffeb3b);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Glycerin-like motion */
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2), transparent 40%);
+  animation: moveOil 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes moveOil {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg) translate(30px, 30px);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 0);
+  }
+}
+
+/* Floating sun */
+.sun {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ff9800, #f57c00);
+  border-radius: 50%;
+  animation: floatSun 20s linear infinite;
+  z-index: 1;
+}
+
+@keyframes floatSun {
+  0% {
+    top: 5%;
+    left: 5%;
+  }
+  25% {
+    top: 10%;
+    left: 80%;
+  }
+  50% {
+    top: 70%;
+    left: 60%;
+  }
+  75% {
+    top: 80%;
+    left: 10%;
+  }
+  100% {
+    top: 5%;
+    left: 5%;
+  }
+}
+
+/* Center selfie upload box */
+.selfie-box {
+  z-index: 2;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

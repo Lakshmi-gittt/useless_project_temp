@@ -1,0 +1,77 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #fff2cc, #ffe066);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.heading {
+  margin-top: 30px;
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+.app-container {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.upload-box {
+  background-color: #fff8dc;
+  border: 2px dashed #ffcc00;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.4);
+  max-width: 400px;
+  width: 90%;
+  z-index: 2;
+}
+
+.preview-img {
+  width: 250px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.result-box {
+  background: #fff3cd;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 193, 7, 0.6);
+  text-align: center;
+}
+
+.emoji-display {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+  
+/* Add this to App.css */
+
+ .sun {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #ffd700 60%, #ff8c00);
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ffaa00;
+  animation: floatSun 10s linear infinite;
+  opacity: 0.8;
+  z-index: 0;
+}
+@keyframes floatSun {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-20vh) rotate(360deg);
+    opacity: 1;
+  }
+}
