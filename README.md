@@ -30,12 +30,14 @@ For Software:
 ### Project Documentation
 For Software:
 
-](<Screenshot 2025-08-02 070353.png>)
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+screenshot1
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 070353" src="https://github.com/user-attachments/assets/5fd4f5b9-45ce-4009-9996-5ce551f95ea6" />
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+screenshot2
+(upload image and  i got cool)
+<img width="1920" height="1080" alt="Screenshot 2025-08-02 070425" src="https://github.com/user-attachments/assets/3f8dbec5-14d5-4bb7-953e-bf1d317a1731" />
+
+
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
